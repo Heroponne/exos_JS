@@ -46,3 +46,21 @@ navbar.addEventListener("dblclick", function(){
 		document.styleSheets[0].disabled = false;
 	}
 })
+
+// Fonctionnalité 6
+
+let cardList = document.querySelectorAll(".col-md-4");
+
+for (let i = 0; i < cardList.length; i++){
+	let viewButton = document.querySelectorAll(".btn-success")[i];
+	document.querySelectorAll("img.card-img-top")[i].style.width = "100%";
+	viewButton.addEventListener("mouseover", function(){
+		document.querySelectorAll("p.card-text")[i].classList.toggle("collapse");
+		if (document.querySelectorAll("img.card-img-top")[i].style.width === "100%") {
+			document.querySelectorAll("img.card-img-top")[i].style.width = "20%";
+		} else if (document.querySelectorAll("img.card-img-top")[i].style.width ==="20%") {
+			document.querySelectorAll("img.card-img-top")[i].style.width = "100%";
+		}
+	})
+}
+
