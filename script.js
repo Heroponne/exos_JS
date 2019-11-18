@@ -10,4 +10,13 @@ footerEl.addEventListener("click", function(){
     console.log("clic numéro " + counter);
 })
 
-//fonctionnalité 2
+// Fonctionnalité 2
+
+let navbarHamburger = document.querySelector(".navbar-toggler");
+navbarHamburger.addEventListener("click", function(){
+	document.getElementById("navbarHeader").classList.toggle("collapse");
+})
+
+// Fonctionnalité 3
+
+
