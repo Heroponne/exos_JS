@@ -35,3 +35,14 @@ editButton2.addEventListener("click", function(){
 		secondCard.style.color = "";
 	}
 })
+
+// Fonctionnalité 5
+
+let navbar = document.querySelector("header");
+navbar.addEventListener("dblclick", function(){
+	if (document.styleSheets[0].disabled === false) {
+		document.styleSheets[0].disabled = true;
+	} else if (document.styleSheets[0].disabled === true) {
+		document.styleSheets[0].disabled = false;
+	}
+})
