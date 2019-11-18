@@ -19,4 +19,10 @@ navbarHamburger.addEventListener("click", function(){
 
 // Fonctionnalité 3
 
+let editButton = document.querySelector(".btn-outline-secondary");
+editButton.addEventListener("click", function(){
+	document.querySelector(".card").style.color = "red";
+})
+
+// Fonctionnalité 4
 
